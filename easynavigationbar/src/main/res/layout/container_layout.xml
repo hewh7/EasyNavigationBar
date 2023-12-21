@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false">
+<!--clipChildren属性, 定义子视图的绘制是否可以超出边界, 默认为true, 表示不超出边界, 设置为false时, 表示允许超出边界-->
+<!--clipChildren属性只需要在爷爷布局设置成false, 即可实现子布局超出边界, 在父布局设置则无效-->
+
+    <RelativeLayout
+        android:id="@+id/add_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="false"
+        android:clickable="false">
+        
+        <LinearLayout
+            android:id="@+id/navigation_ll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:clipChildren="false" />
+
+        <View
+            android:id="@+id/common_horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/navigation_ll"
+            android:background="#f7f7f7" />
+        
+        <View
+            android:id="@+id/empty_line"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:clickable="false"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_view_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"/>
+
+</RelativeLayout>

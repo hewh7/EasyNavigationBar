@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EasyNavigationBar">
+        <!--底部导航栏高度-->
+        <attr format="dimension" name="Easy_navigationHeight"/>
+        <!--底部导航栏背景-->
+        <attr format="color" name="Easy_navigationBackground"/>
+        <!--Tab字体大小-->
+        <attr format="dimension" name="Easy_tabTextSize"/>
+        <!--Tab文字距Tab图标的距离-->
+        <attr format="dimension" name="Easy_tabTextTop"/>
+        <!--Tab图标大小-->
+        <attr format="dimension" name="Easy_tabIconSize"/>
+        <!--Tab未选中字体颜色-->
+        <attr format="color" name="Easy_tabNormalColor"/>
+        <!--Tab选中字体颜色-->
+        <attr format="color" name="Easy_tabSelectColor"/>
+        <!--提示红点的大小-->
+        <attr format="dimension" name="Easy_hintPointSize"/>
+        <!--消息红点的大小-->
+        <attr format="dimension" name="Easy_msgPointSize"/>
+        <!--提示红点距Tab图标的距离-->
+        <attr format="dimension" name="Easy_hintPointLeft"/>
+        <!--消息红点距Tab图标的距离-->
+        <attr format="dimension" name="Easy_msgPointLeft"/>
+        <!--提示红点距离顶部的距离-->
+        <attr format="dimension" name="Easy_hintPointTop"/>
+        <!--消息红点距顶部的距离-->
+        <attr format="dimension" name="Easy_msgPointTop"/>
+        <!--消息红点数字字体大小-->
+        <attr format="dimension" name="Easy_msgPointTextSize"/>
+
+        <!--消息红点99+的长度-->
+        <attr format="dimension" name="Easy_msgPointMoreWidth"/>
+        <!--消息红点99+的高度-->
+        <attr format="dimension" name="Easy_msgPointMoreHeight"/>
+        <!--消息红点99+的半径-->
+        <attr format="integer" name="Easy_msgPointMoreRadius"/>
+        <!--消息红点的颜色-->
+        <attr format="color" name="Easy_msgPointColor"/>
+        
+        <!--分割线高度-->
+        <attr format="dimension" name="Easy_lineHeight"/>
+        <!--分割线颜色-->
+        <attr format="color" name="Easy_lineColor"/>
+
+        <!--是否有paddingBottom-->
+        <attr format="boolean" name="Easy_hasPadding"/>
+
+        <!--中间图片的大小-->
+        <attr format="dimension" name="Easy_centerIconSize"/>
+        <!--底部导航栏和加号的高度  加号会居中-->
+        <attr format="dimension" name="Easy_centerLayoutHeight"/>
+        <!--添加按钮距离底部的距离-->
+        <attr format="dimension" name="Easy_centerLayoutBottomMargin"/>
+        <!--图标显示-->
+        <attr name="Easy_scaleType">
+            <flag name="CENTER_INSIDE" value="0"/>
+            <flag name="CENTER_CROP" value="1"/>
+            <flag name="CENTER" value="2"/>
+            <flag name="FIT_CENTER" value="3"/>
+            <flag name="FIT_END" value="4"/>
+            <flag name="FIT_START" value="5"/>
+            <flag name="FIT_XY" value="6"/>
+            <flag name="MATRIX" value="7"/>
+        </attr>
+
+        <!--图标显示-->
+        <attr name="Easy_centerLayoutRule">
+            <flag name="RULE_CENTER" value="0"/>
+            <flag name="RULE_BOTTOM" value="1"/>
+        </attr>
+        <!-- true 点击加号切换fragment
+         false 点击加号不切换fragment进行其他操作（跳转界面等）-->
+        <attr format="boolean" name="Easy_centerAsFragment"/>
+        <attr format="color" name="Easy_centerSelectTextColor"/>
+        <attr format="color" name="Easy_centerNormalTextColor"/>
+        <attr format="dimension" name="Easy_centerTextSize"/>
+        <!--加号文字距离顶部加号的距离-->
+        <attr format="dimension" name="Easy_centerTextTopMargin"/>
+        <!--是否和其他tab文字底部对齐-->
+        <attr format="dimension" name="Easy_centerAlignBottom"/>
+        <!--文字大小单位DP还是SP-->
+        <attr name="Easy_textSizeType">
+            <flag name="TYPE_DP" value="1"/>
+            <flag name="TYPE_SP" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <item name="tag_view_position" type="id"/>
+</resources>
